@@ -1,3 +1,18 @@
-<p>
-  signin works!
-</p>
+<form [formGroup]="form">
+  <fieldset>
+      <legend>Login</legend>
+      <div class="form-field">
+          <label>User:</label>
+          <input name="user" formControlName="user">
+      </div>
+      <div class="form-field">
+          <label>Password:</label>
+          <input name="password" formControlName="password" 
+                 type="password">
+      </div>
+  </fieldset>
+  <div class="form-buttons">
+      <button class="button button-primary" 
+              (click)="login()">Login</button>
+  </div>
+</form>
