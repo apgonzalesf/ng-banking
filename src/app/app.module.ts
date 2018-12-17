@@ -11,6 +11,7 @@ import { routing } from './app.routing';
 
 import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 import { HomeComponent } from './home';
+import { CustomersComponent } from './customers';
 import { LoginComponent } from './login';
 
 @NgModule({
@@ -23,6 +24,7 @@ import { LoginComponent } from './login';
     declarations: [
         AppComponent,
         HomeComponent,
+        CustomersComponent,
         LoginComponent
     ],
     providers: [
